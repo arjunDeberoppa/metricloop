@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metricloop</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-poppins break-words">
+    <!-- Menu Section -->
+
+    <head>
+        <div class="flex py-8 px-5 md:px-[56px] xl:px-[156px] justify-between">
+            <div class="flex gap-3 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none">
+                    <path
+                        d="M34.1723 1.66641L34.1662 1.67548L34.1602 1.68497L28.4612 10.7404L26.4845 13.881L20.1391 23.9648C20.1266 23.9848 20.0933 24.0376 20.0066 24.0376C19.9194 24.0376 19.8872 23.9865 19.8734 23.9648L13.5182 13.8742L11.5407 10.7346L5.86305 1.72024L5.83462 1.67672C5.22284 0.784481 4.27057 0.278547 3.21505 0.278341C2.89317 0.278341 2.56982 0.326809 2.254 0.422098C0.884754 0.836042 0 2.01642 0 3.42965V24.5271C0 25.9399 0.884756 27.1205 2.2538 27.5346C2.57003 27.6301 2.89359 27.6786 3.21505 27.6786C4.27036 27.6786 5.22263 27.1724 5.82793 26.2903L5.83524 26.2794L5.84235 26.2682L10.8821 18.118L8.90461 14.9789L3.34673 23.9667V3.98117L17.0311 25.7077C17.6746 26.7298 18.787 27.3401 20.0064 27.3401C20.3115 27.3399 20.6098 27.3018 20.8957 27.2285C21.4676 27.0819 21.9899 26.7954 22.4173 26.3932C22.6314 26.1923 22.8214 25.9624 22.9823 25.7068L36.6533 3.98096V23.9673L31.1192 15.0139L29.1417 18.1533L34.1305 26.2256L34.1645 26.2786C34.7778 27.1724 35.7301 27.6786 36.7849 27.6786C37.1066 27.6786 37.43 27.6301 37.7464 27.5346C39.1157 27.1203 40 25.9397 40 24.5271V3.42965C40 2.01724 39.1157 0.836456 37.7468 0.422098C37.4306 0.326809 37.1072 0.278133 36.7849 0.278133C35.7296 0.278133 34.7776 0.784271 34.1723 1.66641Z"
+                        fill="url(#paint0_linear_3784_9636)" />
+                    <path
+                        d="M34.4333 1.33542C34.3409 1.43937 34.2533 1.54888 34.1728 1.66624L34.1668 1.67532L34.1607 1.68481L28.4617 10.7403L26.4851 13.8808L20.1397 23.9647C20.1271 23.9847 20.0939 24.0375 20.0071 24.0375C19.92 24.0375 19.8878 23.9863 19.874 23.9647L13.5187 13.874L11.5413 10.7345L5.86361 1.72007L5.83518 1.67656C5.7708 1.5823 5.70016 1.49464 5.62846 1.40926C5.38684 1.21043 5.0775 1.08812 4.73827 1.08812C3.9691 1.08812 3.34583 1.70357 3.34583 2.46237L3.34771 3.98286L17.0316 25.7075C17.6752 26.7297 18.7875 27.34 20.0069 27.34C20.3121 27.3398 20.6104 27.3016 20.8963 27.2284C21.4681 27.0817 21.9905 26.7953 22.4179 26.3931C22.6319 26.1922 22.8219 25.9622 22.9829 25.7067L36.6545 3.97997L36.62 2.46237C36.62 1.70357 35.9967 1.08812 35.2277 1.08812C34.932 1.08812 34.6588 1.18032 34.4333 1.33542Z"
+                        fill="url(#paint1_linear_3784_9636)" />
+                    <mask id="mask0_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="29" y="15"
+                        width="8" height="12">
+                        <path
+                            d="M29.1418 18.1525L34.1305 26.2248L34.1646 26.2778C34.262 26.4197 34.3703 26.5478 34.4835 26.6694C34.6988 26.8043 34.9532 26.8842 35.2272 26.8842C35.9962 26.8842 36.6195 26.2691 36.6195 25.5101L36.5925 23.8679L31.1193 15.0132L29.1418 18.1525Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_3784_9636)">
+                        <mask id="mask1_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint2_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask1_3784_9636)">
+                            <path
+                                d="M29.1421 18.1502L34.1308 26.2225L34.1649 26.2755C34.2623 26.4174 34.3706 26.5454 34.4839 26.6671C34.6991 26.802 34.9535 26.8818 35.2275 26.8818C35.9965 26.8818 36.6198 26.2668 36.6198 25.5078L36.5928 23.8656L31.1196 15.0109L29.1421 18.1502Z"
+                                fill="url(#paint3_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <mask id="mask2_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="14"
+                        width="8" height="13">
+                        <path
+                            d="M3.3847 23.9051L3.34583 25.5101C3.34583 26.2691 3.9691 26.8842 4.73828 26.8842C5.06371 26.8842 5.36093 26.7713 5.59795 26.5867C5.67904 26.4927 5.75659 26.3943 5.82849 26.2895L5.8358 26.2786L5.84291 26.2675L10.8827 18.1172L8.90517 14.9781L3.3847 23.9051Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask2_3784_9636)">
+                        <mask id="mask3_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint4_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask3_3784_9636)">
+                            <path
+                                d="M3.38458 23.9027L3.3457 25.5078C3.3457 26.2668 3.96898 26.8818 4.73815 26.8818C5.06359 26.8818 5.3608 26.769 5.59782 26.5844C5.67892 26.4904 5.75647 26.392 5.82837 26.2872L5.83568 26.2763L5.84279 26.2651L10.8825 18.1149L8.90505 14.9758L3.38458 23.9027Z"
+                                fill="url(#paint5_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <path
+                        d="M34.4319 1.33474C34.3395 1.43869 34.2519 1.5482 34.1715 1.66556L34.1654 1.67464L34.1593 1.68413L20.1383 23.964C20.1257 23.984 20.0925 24.0368 20.0058 24.0368C19.9433 24.0368 19.91 24.0106 19.8904 23.9879L20.2595 24.651C21.0876 26.0752 22.6943 26.0991 23.2524 25.1998L23.5996 24.7234L36.6531 3.9795L36.6186 2.46169C36.6186 1.70289 35.9953 1.08744 35.2264 1.08744C34.9306 1.08744 34.6574 1.17964 34.4319 1.33474Z"
+                        fill="url(#paint6_linear_3784_9636)" />
+                    <mask id="mask4_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="12" y="1"
+                        width="9" height="12">
+                        <path
+                            d="M16.7603 2.38361L16.0873 3.38331L12.1917 9.63375L14.1936 12.8071L19.8667 3.62462C19.8802 3.60235 19.9124 3.55079 20 3.55079C20.0878 3.55079 20.1215 3.60441 20.1338 3.62483L19.753 2.93224C19.2875 2.13137 18.5754 1.77331 17.9423 1.77331C17.4496 1.77331 17.0046 1.99008 16.7603 2.38361Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask4_3784_9636)">
+                        <mask id="mask5_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint7_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask5_3784_9636)">
+                            <path
+                                d="M16.7605 2.38215L16.0875 3.38184L12.1919 9.63229L14.1938 12.8057L19.8669 3.62316C19.8805 3.60088 19.9127 3.54932 20.0002 3.54932C20.088 3.54932 20.1217 3.60295 20.134 3.62337L19.7532 2.93077C19.2877 2.1299 18.5756 1.77185 17.9425 1.77185C17.4498 1.77185 17.0049 1.98862 16.7605 2.38215Z"
+                                fill="url(#paint8_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <mask id="mask6_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="0"
+                        width="12" height="13">
+                        <path
+                            d="M17.0093 1.90402L16.0858 3.3849L16.7589 2.3852C17.3169 1.48595 18.9236 1.50988 19.7515 2.93383L20.092 3.55918L20.2594 3.83804L20.9174 4.89631L25.7916 12.7755L27.7716 9.62214L22.9877 1.90402C22.3458 0.868226 21.2286 0.249887 19.9984 0.249887C18.7681 0.249887 17.6507 0.868226 17.0093 1.90402Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask6_3784_9636)">
+                        <mask id="mask7_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.22 -6681.11H6816.5V6835.56H-6881.22V-6681.11Z"
+                                fill="url(#paint9_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask7_3784_9636)">
+                            <path
+                                d="M17.0089 1.90097L16.0854 3.38185L16.7585 2.38215C17.3165 1.4829 18.9232 1.50682 19.7511 2.93078L20.0916 3.55613L20.259 3.83499L20.917 4.89326L25.7912 12.7725L27.7712 9.61909L22.9873 1.90097C22.3454 0.865174 21.2282 0.246836 19.998 0.246836C18.7677 0.246836 17.6503 0.865174 17.0089 1.90097Z"
+                                fill="url(#paint10_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_3784_9636" x1="20.0001" y1="5.73431" x2="20.0001" y2="35.8651"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#C4B2F5" />
+                            <stop offset="0.172062" stop-color="#C4B2F5" />
+                            <stop offset="1" stop-color="#5E33D7" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_3784_9636" x1="20.0001" y1="-4.0707" x2="20.0001" y2="26.6046"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8969E3" />
+                            <stop offset="0.827938" stop-color="#8A69E2" />
+                            <stop offset="1" stop-color="#B498FE" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_3784_9636" x1="32.8838" y1="5.73079" x2="32.8838" y2="35.8616"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.436518" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_3784_9636" x1="32.8809" y1="5.73122" x2="32.8809" y2="35.862"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#9273E7" />
+                            <stop offset="1" stop-color="#DACFF7" />
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_3784_9636" x1="7.11815" y1="5.73079" x2="7.11815" y2="35.8616"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.436518" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_3784_9636" x1="7.11416" y1="5.73121" x2="7.11416" y2="35.862"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#C1AFF5" />
+                            <stop offset="0.436518" stop-color="#B9A5F2" />
+                            <stop offset="1" stop-color="#451DB4" />
+                        </linearGradient>
+                        <linearGradient id="paint6_linear_3784_9636" x1="28.2717" y1="2.51188" x2="28.2717" y2="39.9116"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="1e-07" stop-color="#8563E3" />
+                            <stop offset="0.172062" stop-color="#8968E4" />
+                            <stop offset="1" stop-color="#896BDC" />
+                        </linearGradient>
+                        <linearGradient id="paint7_linear_3784_9636" x1="16.1647" y1="4.33224" x2="16.1647" y2="27.3543"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.695993" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint8_linear_3784_9636" x1="16.163" y1="4.33269" x2="16.163" y2="27.3548"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8A6BDE" />
+                            <stop offset="0.145" stop-color="#A68DEB" />
+                        </linearGradient>
+                        <linearGradient id="paint9_linear_3784_9636" x1="21.9276" y1="-1.02468" x2="21.9276"
+                            y2="22.1715" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.695993" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint10_linear_3784_9636" x1="21.9283" y1="-1.021" x2="21.9283" y2="22.1752"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8E6EE5" />
+                            <stop offset="0.485" stop-color="#B29CEE" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <img class="w-[120.86px] h-6" src="/images/header/png/Component name.png" alt="Metricloop">
+            </div>
+            <div class="md:flex md:gap-3 lg:gap-10 hidden">
+                <button class="flex gap-1 items-center py-2 px-3 font-medium text-customText_blue">Solutions
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.46967 8.46967C5.76256 8.17678 6.23744 8.17678 6.53033 8.46967L12 13.9393L17.4697 8.46967C17.7626 8.17678 18.2374 8.17678 18.5303 8.46967C18.8232 8.76256 18.8232 9.23744 18.5303 9.53033L12.5303 15.5303C12.2374 15.8232 11.7626 15.8232 11.4697 15.5303L5.46967 9.53033C5.17678 9.23744 5.17678 8.76256 5.46967 8.46967Z"
+                            fill="#667593" />
+                    </svg>
+                </button>
+                <button class="py-2 px-3 font-medium text-customText_blue">Pricing</button>
+                <button class="py-2 px-3 font-medium text-customText_blue">Contact us</button>
+                <button class="py-2 px-3 text-white font-medium bg-custom_purple rounded-lg">Start now</button>
+            </div>
+        </div>
+    </head>
+    <!-- hero section -->
+    <section class="relative">
+        <div class="flex flex-col gap-16 pt-[72px] items-center text-center">
+            <div class="relative flex flex-col gap-9 items-center">
+                <div class="flex flex-col gap-6">
+                    <div class="relative">
+                        <h1 class="text-[52px] font-semibold text-[#232A33] leading-[60px]">
+                            Crafting data products,
+                            <span class="text-custom_purple relative z-20"> together.</span>
+                        </h1>
+                        <img class="absolute top-0 right-0 z-0" src="/images/herosection/Vector.png" alt="Vector">
+                    </div>
+                    <p class="text-[#414D67] text-[22px] leading-7">Lorem ipsum dolor sit amet consectetur, Ut eu nunc
+                        eu a cursus.</p>
+                </div>
+                <div class="flex gap-6">
+                    <button class="py-3 px-[31px] text-white font-medium bg-custom_purple rounded-lg">Start now</button>
+                    <button class="py-3 px-[31px] text-customText_blue rounded-lg border border-[#B8C0D1]">Book a
+                        demo</button>
+                </div>
+                <img class="absolute bottom-0 right-0 h-[121px] w-[121px]" src="/images/herosection/fi_7568193.png"
+                    alt="arrow">
+            </div>
+            <div class="pl-[120px] pb-[10px] z-10">
+                <img class="" src="/images/herosection/dataprodutcs.png" alt="data-products">
+            </div>
+        </div>
+        <img class="absolute top-0 left-0 mt-[221px] ml-4 z-0" src="/images/herosection/Document.png" alt="placeholder">
+        <img class="absolute top-0 left-0 z-0" src="/images/herosection/Rectangle 1.png" alt="placeholder">
+        <img class="absolute top-0 left-0 mt-[204px] ml-[175px] z-0" src="/images/herosection/Rectangle 2.png"
+            alt="placeholder">
+        <img class="absolute bottom-0 left-0 ml-[68px] mb-4 z-0" src="/images/herosection/Rectangle 4.png"
+            alt="placeholder">
+        <img class="absolute top-0 right-0 mt-[287px] mr-[143px] z-0" src="/images/herosection/Rectangle 3.png"
+            alt="placeholder">
+        <img class="absolute top-0 right-0 mt-[226px] z-0" src="/images/herosection/Vector-1.png" alt="placeholder">
+    </section>
+    <!-- 2nd section -->
+    <section class="relative">
+        <!-- container mx-auto -->
+        <div class="px-5 md:px-[56px] xl:px-[156px] flex flex-col gap-20 py-[104px]">
+            <div class="flex flex-col gap-6 text-center">
+                <h3 class="md:text-[32px] text-3xl font-medium text-customText_blue leading-10">How metricloop works
+                </h3>
+                <p class="md:text-[22px] text-xl text-customText_gray leading-7">Lorem ipsum dolor sit amet consectetur,
+                    Ut eu
+                    nunc
+                    eu a cursus.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="flex flex-col gap-6 p-6 bg-custom_light rounded-lg">
+                    <svg class="bg-custom_LightPurple p-4 rounded-lg h-16 w-16" xmlns="http://www.w3.org/2000/svg"
+                        width="30" height="26" viewBox="0 0 30 26" fill="none">
+                        <path
+                            d="M28.3333 25V22.3333C28.3333 19.8482 26.6336 17.7601 24.3333 17.168M19.6667 1.38768C21.6212 2.17886 23 4.09508 23 6.33333C23 8.57159 21.6212 10.4878 19.6667 11.279M21.6667 25C21.6667 22.515 21.6667 21.2725 21.2607 20.2924C20.7194 18.9855 19.6811 17.9473 18.3743 17.406C17.3942 17 16.1517 17 13.6667 17H9.66666C7.18164 17 5.93913 17 4.95902 17.406C3.6522 17.9473 2.61394 18.9855 2.07264 20.2924C1.66666 21.2725 1.66666 22.515 1.66666 25M17 6.33333C17 9.27885 14.6122 11.6667 11.6667 11.6667C8.72114 11.6667 6.33333 9.27885 6.33333 6.33333C6.33333 3.38781 8.72114 1 11.6667 1C14.6122 1 17 3.38781 17 6.33333Z"
+                            stroke="#7F57EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-medium text-customText_blue">Create your team &
+                            share your workspace</h4>
+                        <p class=" text-customText_gray text-sm">Lorem ipsum dolor sit amet consectetur.
+                            Nibh lectus id cursus lacus integer.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 p-6 bg-custom_light rounded-lg z-10">
+                    <svg class="bg-custom_LightPurple p-4 rounded-lg h-16 w-16" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M1 4C1 3.20435 1.31607 2.44129 1.87868 1.87868C2.44129 1.31607 3.20435 1 4 1H7C7.79565 1 8.55871 1.31607 9.12132 1.87868C9.68393 2.44129 10 3.20435 10 4V7C10 7.79565 9.68393 8.55871 9.12132 9.12132C8.55871 9.68393 7.79565 10 7 10H4C3.20435 10 2.44129 9.68393 1.87868 9.12132C1.31607 8.55871 1 7.79565 1 7V4ZM1 17C1 16.2044 1.31607 15.4413 1.87868 14.8787C2.44129 14.3161 3.20435 14 4 14H7C7.79565 14 8.55871 14.3161 9.12132 14.8787C9.68393 15.4413 10 16.2044 10 17V20C10 20.7957 9.68393 21.5587 9.12132 22.1213C8.55871 22.6839 7.79565 23 7 23H4C3.20435 23 2.44129 22.6839 1.87868 22.1213C1.31607 21.5587 1 20.7957 1 20V17ZM14 4C14 3.20435 14.3161 2.44129 14.8787 1.87868C15.4413 1.31607 16.2044 1 17 1H20C20.7957 1 21.5587 1.31607 22.1213 1.87868C22.6839 2.44129 23 3.20435 23 4V7C23 7.79565 22.6839 8.55871 22.1213 9.12132C21.5587 9.68393 20.7957 10 20 10H17C16.2044 10 15.4413 9.68393 14.8787 9.12132C14.3161 8.55871 14 7.79565 14 7V4ZM14 17C14 16.2044 14.3161 15.4413 14.8787 14.8787C15.4413 14.3161 16.2044 14 17 14H20C20.7957 14 21.5587 14.3161 22.1213 14.8787C22.6839 15.4413 23 16.2044 23 17V20C23 20.7957 22.6839 21.5587 22.1213 22.1213C21.5587 22.6839 20.7957 23 20 23H17C16.2044 23 15.4413 22.6839 14.8787 22.1213C14.3161 21.5587 14 20.7957 14 20V17Z"
+                            stroke="#7F57EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-medium text-customText_blue">Collaborate with your team
+                            & add blocks to your workflow</h4>
+                        <p class=" text-customText_gray text-sm">Lorem ipsum dolor sit amet consectetur.
+                            Nibh lectus id cursus lacus integer.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 p-6 bg-custom_light rounded-lg z-10">
+                    <svg class="bg-custom_LightPurple p-4 rounded-lg h-16 w-16" xmlns="http://www.w3.org/2000/svg"
+                        width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path
+                            d="M15 28.3333C22.3638 28.3333 28.3334 22.3638 28.3334 15C28.3334 7.63621 22.3638 1.66667 15 1.66667C7.63622 1.66667 1.66669 7.63621 1.66669 15C1.66669 22.3638 7.63622 28.3333 15 28.3333Z"
+                            stroke="#7F57EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M11.6667 10.9538C11.6667 10.3174 11.6667 9.99921 11.7997 9.82157C11.9156 9.66677 12.093 9.56992 12.2859 9.55614C12.5072 9.54033 12.7749 9.7124 13.3102 10.0565L19.6043 14.1027C20.0688 14.4014 20.3011 14.5507 20.3813 14.7405C20.4514 14.9064 20.4514 15.0936 20.3813 15.2595C20.3011 15.4493 20.0688 15.5986 19.6043 15.8973L13.3102 19.9435C12.7749 20.2876 12.5072 20.4597 12.2859 20.4439C12.093 20.4301 11.9156 20.3332 11.7997 20.1784C11.6667 20.0008 11.6667 19.6826 11.6667 19.0462V10.9538Z"
+                            stroke="#7F57EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-medium text-customText_blue">Run your workflow or set an
+                            automated workflow run schedule</h4>
+                        <p class=" text-customText_gray text-sm">Lorem ipsum dolor sit amet consectetur.
+                            Nibh lectus id cursus lacus integer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="block absolute bottom-0 right-0 z-0" style="width: 415.69px; height: 440px;"
+            src="/images/section-2/png/stair-group.png" alt="place-holder">
+    </section>
+    <!-- 3rd section -->
+    <!-- container mx-auto -->
+    <section class="relative">
+        <div class="flex flex-col lg:flex-row py-16 md:py-28 gap-[77px] px-5 md:px-[56px] xl:px-[156px] z-10">
+            <div class="flex flex-col gap-8 xl:mt-[72px] w-auto lg:w-[447px] z-10">
+                <h3 class="text-3xl xl:text-[32px] md:leading-10 text-customText_blue font-semibold">Create projects
+                    <span class="lg:block">& workspaces</span>
+                </h3>
+                <p class="text-lg md:text-[22px] md:leading-7 text-customText_gray bg-white">Lorem ipsum dolor sit amet
+                    consectetur.
+                    Nibh lectus id cursus lacus integer. Tempor
+                    lorem vulputate
+                    consequat quis ut
+                    vitae tempor cursus.
+
+                    <br><br>Lorem ipsum dolor sit amet consectetur. Nibh lectus id cursus lacus integer.
+                </p>
+            </div>
+            <img class="w-auto lg:w-[604px] z-10" src="/images/new-img/Frame 132-4.png" alt="Menu">
+        </div>
+        <img class="flex absolute bottom-0 left-0 z-0 lg:mb-[42px]" style="width: 258px; height: 258px;"
+            src="/images/background-props/line-in-motion 1.png" alt="place-holder">
+    </section>
+    <!-- 4th section -->
+    <!-- container mx-auto -->
+    <section class="bg-custom_bg relative">
+        <div class="flex flex-col-reverse lg:flex-row py-16 md:py-28 gap-[68px] px-5 md:px-[56px] xl:px-[156px]">
+            <img class="w-auto lg:w-[604px] z-10" src="/images/new-img/Frame 132.png" alt="Menu">
+            <div class="flex flex-col gap-8 xl:mt-[72px] w-auto lg:w-[447px]">
+                <h3 class="text-3xl xl:text-[32px] md:leading-10 text-customText_blue font-semibold">Collaborate
+                    <span class="lg:block">& invite members</span>
+                </h3>
+                <p class="text-lg md:text-[22px] md:leading-7 text-customText_gray z-10">Lorem ipsum
+                    dolor sit
+                    amet
+                    consectetur.
+                    Nibh lectus id cursus lacus integer. Tempor
+                    lorem vulputate
+                    consequat quis ut
+                    vitae tempor cursus.
+
+                    <br><br>Lorem ipsum dolor sit amet consectetur. Nibh lectus id cursus lacus integer.
+                </p>
+            </div>
+        </div>
+        <img class="flex absolute bottom-0 right-0 z-0 lg:mb-[46px] overflow-hidden"
+            style="width: 268px; height: 268px;" src="/images/background-props/Soft Star.png" alt="place-holder">
+    </section>
+    <!-- 5th section -->
+    <section class="relative">
+        <div
+            class="flex flex-col lg:flex-row py-16 md:py-28 gap-[77px] px-5 md:px-[56px] xl:pl-[156px] xl:pr-[52px] z-0">
+            <div class="flex flex-col gap-8 xl:mt-[72px] w-auto h-auto lg:w-[447px]">
+                <h3 class="text-3xl xl:text-[32px] md:leading-10 text-customText_blue font-semibold">Add code and
+                    text blocks
+                    <span class="hidden xl:block">to workspaces</span>
+                </h3>
+                <p class="text-lg md:text-[22px] md:leading-7 text-customText_gray">Lorem ipsum dolor sit amet
+                    consectetur.
+                    Nibh lectus id cursus lacus integer. Tempor
+                    lorem vulputate
+                    consequat quis ut
+                    vitae tempor cursus.
+
+                    <br><br>Lorem ipsum dolor sit amet consectetur. Nibh lectus id cursus lacus integer.
+                </p>
+            </div>
+            <div class="grid grid-cols-6 grid-rows-6 gap-0">
+                <img class="col-start-1 row-start-1 col-span-5 row-span-5 w-auto lg:w-[604px]"
+                    src="/images/new-img/Frame 132-1.png" alt="Frame">
+                <img class="col-end-7 row-end-7 col-span-3 row-span-5 w-[263.88px]"
+                    src="/images/other-sections/floating menu-1.png" alt="Menu">
+            </div>
+        </div>
+        <img class="flex absolute bottom-0 left-0 z-0 ml-5 mb-10 lg:ml-20 lg:mb-52 w-56 h-auto sm:h-[29.45px] sm:w-[266.74px]"
+            src="/images/background-props/Zig Zag.png" alt="place-holder">
+    </section>
+    <!-- 6th section -->
+    <section class="bg-custom_bg relative">
+        <div class="flex flex-col-reverse lg:flex-row py-16 md:py-28 gap-[68px] px-5 md:px-[56px] xl:px-[156px]">
+            <img class="w-auto lg:w-[604px] z-10" src="/images/new-img/Frame 132-2.png" alt="Frame">
+            <div class="flex flex-col gap-8 xl:mt-[72px] w-auto lg:w-[447px] z-10">
+                <h3 class="text-3xl xl:text-[32px] xl:leading-10 text-customText_blue font-semibold z-10">Integrate data
+                    connectors,
+                    pre-made metrics,
+                    query & visualize your data.
+                </h3>
+                <p class="text-lg md:text-[22px] md:leading-7 text-customText_gray z-10">Lorem ipsum dolor sit amet
+                    consectetur.
+                    Nibh lectus id cursus lacus integer. Tempor
+                    lorem vulputate
+                    consequat quis ut
+                    vitae tempor cursus.
+
+                    <br><br>Lorem ipsum dolor sit amet consectetur. Nibh lectus id cursus lacus integer.
+                </p>
+            </div>
+        </div>
+        <img class="flex absolute bottom-0 right-0 z-0 lg:mr-[255px] h-auto w-48 sm:w-[248px]"
+            src="/images/background-props/Dawn.png" alt="place-holder">
+    </section>
+    <!-- 7th section -->
+    <section class="relative">
+        <div class="flex flex-col lg:flex-row py-16 md:py-28 gap-[77px] px-5 md:px-[56px] xl:px-[156px]">
+            <div class="flex flex-col gap-8 xl:mt-[72px] w-auto h-auto lg:w-[447px]">
+                <h3 class="text-3xl lg:text-[32px] md:leading-10 text-customText_blue font-semibold">Create workflows &
+                    <span class="xl:block">workflow run schedule</span>
+                </h3>
+                <p class="text-lg md:text-[22px] md:leading-7 text-customText_gray">Lorem ipsum dolor sit amet
+                    consectetur.
+                    Nibh lectus id cursus lacus integer. Tempor
+                    lorem vulputate
+                    consequat quis ut
+                    vitae tempor cursus.
+
+                    <br><br>Lorem ipsum dolor sit amet consectetur. Nibh lectus id cursus lacus integer.
+                </p>
+            </div>
+            <img class="w-auto lg:w-[604px]" src="/images/new-img/Frame 132-3.png" alt="Frame">
+        </div>
+    </section>
+    <!-- 8th section -->
+    <section class="relative">
+        <div class="flex flex-col gap-10 md:gap-20 py-16 md:py-28 px-5 md:px-[56px] xl:px-[156px] ">
+            <div class="flex flex-col gap-6 md:text-center">
+                <h3 class="text-3xl md:text-[32px] font-semibold leading-10 text-customText_blue z-10">Improve your
+                    productivity with
+                    collaboration
+                </h3>
+                <p class="text-xl md:text-[22px] leading-7 text-customText_gray z-10">Lorem ipsum dolor sit amet
+                    consectetur.
+                    Nibh
+                    lectus id cursus lacus integer.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-16 text-center z-10">
+                <div
+                    class="w-auto md:w-[532px] bg-custom_bg pt-8 px-5 pb-[35px] md:pt-12 md:px-[37px] md:pb-[53.49px] flex flex-col gap-8 md:gap-10">
+                    <p class="text-xl md:text-2xl text-customText_blue">Leave comments
+                        <span class="block"> and tag your team members</span>
+                    </p>
+                    <img src="/images/other-sections/floating menu-3.png" alt="Floating-menu">
+                </div>
+                <div class="w-auto md:w-[532px] pt-8 md:pt-12 flex flex-col gap-[30px] md:gap-[70px]">
+                    <p class="text-xl md:text-2xl text-customText_blue">Control team members
+                        <span class="block">permissions</span>
+                    </p>
+                    <img class="pr-[30px] md:pr-[70.5px]" src="/images/other-sections/Table.png" alt="Table">
+                </div>
+            </div>
+        </div>
+        <img class="flex absolute top-0 left-0 z-0 lg:mt-10 h-96 sm:h-[514.43px]" style="width: auto;"
+            src="/images/background-props/Group.png" alt="place-holder">
+    </section>
+    <!-- 9th section -->
+    <section>
+        <div class="flex flex-col gap-14 py-16 md:py-28 px-5 md:px-[56px]">
+            <div class="flex flex-col gap-6 text-center">
+                <h3 class="text-3xl md:text-[32px] text-customText_blue font-semibold">Frequently asked question</h3>
+                <p class="text-lg md:text-[22px] text-customText_gray">Lorem ipsum dolor sit amet consectetur. Nibh
+                    lectus.</p>
+            </div>
+            <div class="flex flex-col w-auto lg:w-[744px] lg:mx-auto border-b ">
+                <div class="flex justify-between py-[30px] border-b border-gray-300">
+                    <p class="text-[22px] leading-7 text-customText_gray">What is metricloop?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 7.25C12.4142 7.25 12.75 7.58579 12.75 8V11.25H16C16.4142 11.25 16.75 11.5858 16.75 12C16.75 12.4142 16.4142 12.75 16 12.75H12.75V16C12.75 16.4142 12.4142 16.75 12 16.75C11.5858 16.75 11.25 16.4142 11.25 16V12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H11.25V8C11.25 7.58579 11.5858 7.25 12 7.25Z"
+                            fill="#667593" />
+                    </svg>
+                </div>
+                <div class="flex justify-between py-[30px] border-b border-gray-300">
+                    <p class="text-[22px] leading-7 text-customText_gray">Why use metricloop?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 7.25C12.4142 7.25 12.75 7.58579 12.75 8V11.25H16C16.4142 11.25 16.75 11.5858 16.75 12C16.75 12.4142 16.4142 12.75 16 12.75H12.75V16C12.75 16.4142 12.4142 16.75 12 16.75C11.5858 16.75 11.25 16.4142 11.25 16V12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H11.25V8C11.25 7.58579 11.5858 7.25 12 7.25Z"
+                            fill="#667593" />
+                    </svg>
+                </div>
+                <div class="flex justify-between py-[30px] border-b border-gray-300">
+                    <p class="text-[22px] leading-7 text-customText_gray">How can I use metricloop?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 7.25C12.4142 7.25 12.75 7.58579 12.75 8V11.25H16C16.4142 11.25 16.75 11.5858 16.75 12C16.75 12.4142 16.4142 12.75 16 12.75H12.75V16C12.75 16.4142 12.4142 16.75 12 16.75C11.5858 16.75 11.25 16.4142 11.25 16V12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H11.25V8C11.25 7.58579 11.5858 7.25 12 7.25Z"
+                            fill="#667593" />
+                    </svg>
+                </div>
+                <div class="flex justify-between py-[30px] border-gray-300">
+                    <p class="text-[22px] leading-7 text-customText_gray">Why use metricloop?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 7.25C12.4142 7.25 12.75 7.58579 12.75 8V11.25H16C16.4142 11.25 16.75 11.5858 16.75 12C16.75 12.4142 16.4142 12.75 16 12.75H12.75V16C12.75 16.4142 12.4142 16.75 12 16.75C11.5858 16.75 11.25 16.4142 11.25 16V12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H11.25V8C11.25 7.58579 11.5858 7.25 12 7.25Z"
+                            fill="#667593" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 10th section -->
+    <section class="relative">
+        <div class="bg-gradient-to-br from-custom_LightPurple to-custom_bg_1 from-50% py-[88px] z-10">
+            <div class="flex flex-col gap-8 items-center z-10">
+                <svg class="w-[73.5px] h-12" xmlns="http://www.w3.org/2000/svg" width="40" height="28"
+                    viewBox="0 0 40 28" fill="none">
+                    <path
+                        d="M34.1723 1.66641L34.1662 1.67548L34.1602 1.68497L28.4612 10.7404L26.4845 13.881L20.1391 23.9648C20.1266 23.9848 20.0933 24.0376 20.0066 24.0376C19.9194 24.0376 19.8872 23.9865 19.8734 23.9648L13.5182 13.8742L11.5407 10.7346L5.86305 1.72024L5.83462 1.67672C5.22284 0.784481 4.27057 0.278547 3.21505 0.278341C2.89317 0.278341 2.56982 0.326809 2.254 0.422098C0.884754 0.836042 0 2.01642 0 3.42965V24.5271C0 25.9399 0.884756 27.1205 2.2538 27.5346C2.57003 27.6301 2.89359 27.6786 3.21505 27.6786C4.27036 27.6786 5.22263 27.1724 5.82793 26.2903L5.83524 26.2794L5.84235 26.2682L10.8821 18.118L8.90461 14.9789L3.34673 23.9667V3.98117L17.0311 25.7077C17.6746 26.7298 18.787 27.3401 20.0064 27.3401C20.3115 27.3399 20.6098 27.3018 20.8957 27.2285C21.4676 27.0819 21.9899 26.7954 22.4173 26.3932C22.6314 26.1923 22.8214 25.9624 22.9823 25.7068L36.6533 3.98096V23.9673L31.1192 15.0139L29.1417 18.1533L34.1305 26.2256L34.1645 26.2786C34.7778 27.1724 35.7301 27.6786 36.7849 27.6786C37.1066 27.6786 37.43 27.6301 37.7464 27.5346C39.1157 27.1203 40 25.9397 40 24.5271V3.42965C40 2.01724 39.1157 0.836456 37.7468 0.422098C37.4306 0.326809 37.1072 0.278133 36.7849 0.278133C35.7296 0.278133 34.7776 0.784271 34.1723 1.66641Z"
+                        fill="url(#paint0_linear_3784_9636)" />
+                    <path
+                        d="M34.4333 1.33542C34.3409 1.43937 34.2533 1.54888 34.1728 1.66624L34.1668 1.67532L34.1607 1.68481L28.4617 10.7403L26.4851 13.8808L20.1397 23.9647C20.1271 23.9847 20.0939 24.0375 20.0071 24.0375C19.92 24.0375 19.8878 23.9863 19.874 23.9647L13.5187 13.874L11.5413 10.7345L5.86361 1.72007L5.83518 1.67656C5.7708 1.5823 5.70016 1.49464 5.62846 1.40926C5.38684 1.21043 5.0775 1.08812 4.73827 1.08812C3.9691 1.08812 3.34583 1.70357 3.34583 2.46237L3.34771 3.98286L17.0316 25.7075C17.6752 26.7297 18.7875 27.34 20.0069 27.34C20.3121 27.3398 20.6104 27.3016 20.8963 27.2284C21.4681 27.0817 21.9905 26.7953 22.4179 26.3931C22.6319 26.1922 22.8219 25.9622 22.9829 25.7067L36.6545 3.97997L36.62 2.46237C36.62 1.70357 35.9967 1.08812 35.2277 1.08812C34.932 1.08812 34.6588 1.18032 34.4333 1.33542Z"
+                        fill="url(#paint1_linear_3784_9636)" />
+                    <mask id="mask0_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="29" y="15"
+                        width="8" height="12">
+                        <path
+                            d="M29.1418 18.1525L34.1305 26.2248L34.1646 26.2778C34.262 26.4197 34.3703 26.5478 34.4835 26.6694C34.6988 26.8043 34.9532 26.8842 35.2272 26.8842C35.9962 26.8842 36.6195 26.2691 36.6195 25.5101L36.5925 23.8679L31.1193 15.0132L29.1418 18.1525Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_3784_9636)">
+                        <mask id="mask1_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint2_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask1_3784_9636)">
+                            <path
+                                d="M29.1421 18.1502L34.1308 26.2225L34.1649 26.2755C34.2623 26.4174 34.3706 26.5454 34.4839 26.6671C34.6991 26.802 34.9535 26.8818 35.2275 26.8818C35.9965 26.8818 36.6198 26.2668 36.6198 25.5078L36.5928 23.8656L31.1196 15.0109L29.1421 18.1502Z"
+                                fill="url(#paint3_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <mask id="mask2_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="14"
+                        width="8" height="13">
+                        <path
+                            d="M3.3847 23.9051L3.34583 25.5101C3.34583 26.2691 3.9691 26.8842 4.73828 26.8842C5.06371 26.8842 5.36093 26.7713 5.59795 26.5867C5.67904 26.4927 5.75659 26.3943 5.82849 26.2895L5.8358 26.2786L5.84291 26.2675L10.8827 18.1172L8.90517 14.9781L3.3847 23.9051Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask2_3784_9636)">
+                        <mask id="mask3_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint4_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask3_3784_9636)">
+                            <path
+                                d="M3.38458 23.9027L3.3457 25.5078C3.3457 26.2668 3.96898 26.8818 4.73815 26.8818C5.06359 26.8818 5.3608 26.769 5.59782 26.5844C5.67892 26.4904 5.75647 26.392 5.82837 26.2872L5.83568 26.2763L5.84279 26.2651L10.8825 18.1149L8.90505 14.9758L3.38458 23.9027Z"
+                                fill="url(#paint5_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <path
+                        d="M34.4319 1.33474C34.3395 1.43869 34.2519 1.5482 34.1715 1.66556L34.1654 1.67464L34.1593 1.68413L20.1383 23.964C20.1257 23.984 20.0925 24.0368 20.0058 24.0368C19.9433 24.0368 19.91 24.0106 19.8904 23.9879L20.2595 24.651C21.0876 26.0752 22.6943 26.0991 23.2524 25.1998L23.5996 24.7234L36.6531 3.9795L36.6186 2.46169C36.6186 1.70289 35.9953 1.08744 35.2264 1.08744C34.9306 1.08744 34.6574 1.17964 34.4319 1.33474Z"
+                        fill="url(#paint6_linear_3784_9636)" />
+                    <mask id="mask4_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="12" y="1"
+                        width="9" height="12">
+                        <path
+                            d="M16.7603 2.38361L16.0873 3.38331L12.1917 9.63375L14.1936 12.8071L19.8667 3.62462C19.8802 3.60235 19.9124 3.55079 20 3.55079C20.0878 3.55079 20.1215 3.60441 20.1338 3.62483L19.753 2.93224C19.2875 2.13137 18.5754 1.77331 17.9423 1.77331C17.4496 1.77331 17.0046 1.99008 16.7603 2.38361Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask4_3784_9636)">
+                        <mask id="mask5_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint7_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask5_3784_9636)">
+                            <path
+                                d="M16.7605 2.38215L16.0875 3.38184L12.1919 9.63229L14.1938 12.8057L19.8669 3.62316C19.8805 3.60088 19.9127 3.54932 20.0002 3.54932C20.088 3.54932 20.1217 3.60295 20.134 3.62337L19.7532 2.93077C19.2877 2.1299 18.5756 1.77185 17.9425 1.77185C17.4498 1.77185 17.0049 1.98862 16.7605 2.38215Z"
+                                fill="url(#paint8_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <mask id="mask6_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="0"
+                        width="12" height="13">
+                        <path
+                            d="M17.0093 1.90402L16.0858 3.3849L16.7589 2.3852C17.3169 1.48595 18.9236 1.50988 19.7515 2.93383L20.092 3.55918L20.2594 3.83804L20.9174 4.89631L25.7916 12.7755L27.7716 9.62214L22.9877 1.90402C22.3458 0.868226 21.2286 0.249887 19.9984 0.249887C18.7681 0.249887 17.6507 0.868226 17.0093 1.90402Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask6_3784_9636)">
+                        <mask id="mask7_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.22 -6681.11H6816.5V6835.56H-6881.22V-6681.11Z"
+                                fill="url(#paint9_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask7_3784_9636)">
+                            <path
+                                d="M17.0089 1.90097L16.0854 3.38185L16.7585 2.38215C17.3165 1.4829 18.9232 1.50682 19.7511 2.93078L20.0916 3.55613L20.259 3.83499L20.917 4.89326L25.7912 12.7725L27.7712 9.61909L22.9873 1.90097C22.3454 0.865174 21.2282 0.246836 19.998 0.246836C18.7677 0.246836 17.6503 0.865174 17.0089 1.90097Z"
+                                fill="url(#paint10_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_3784_9636" x1="20.0001" y1="5.73431" x2="20.0001" y2="35.8651"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#C4B2F5" />
+                            <stop offset="0.172062" stop-color="#C4B2F5" />
+                            <stop offset="1" stop-color="#5E33D7" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_3784_9636" x1="20.0001" y1="-4.0707" x2="20.0001" y2="26.6046"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8969E3" />
+                            <stop offset="0.827938" stop-color="#8A69E2" />
+                            <stop offset="1" stop-color="#B498FE" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_3784_9636" x1="32.8838" y1="5.73079" x2="32.8838" y2="35.8616"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.436518" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_3784_9636" x1="32.8809" y1="5.73122" x2="32.8809" y2="35.862"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#9273E7" />
+                            <stop offset="1" stop-color="#DACFF7" />
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_3784_9636" x1="7.11815" y1="5.73079" x2="7.11815" y2="35.8616"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.436518" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_3784_9636" x1="7.11416" y1="5.73121" x2="7.11416" y2="35.862"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#C1AFF5" />
+                            <stop offset="0.436518" stop-color="#B9A5F2" />
+                            <stop offset="1" stop-color="#451DB4" />
+                        </linearGradient>
+                        <linearGradient id="paint6_linear_3784_9636" x1="28.2717" y1="2.51188" x2="28.2717" y2="39.9116"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="1e-07" stop-color="#8563E3" />
+                            <stop offset="0.172062" stop-color="#8968E4" />
+                            <stop offset="1" stop-color="#896BDC" />
+                        </linearGradient>
+                        <linearGradient id="paint7_linear_3784_9636" x1="16.1647" y1="4.33224" x2="16.1647" y2="27.3543"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.695993" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint8_linear_3784_9636" x1="16.163" y1="4.33269" x2="16.163" y2="27.3548"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8A6BDE" />
+                            <stop offset="0.145" stop-color="#A68DEB" />
+                        </linearGradient>
+                        <linearGradient id="paint9_linear_3784_9636" x1="21.9276" y1="-1.02468" x2="21.9276"
+                            y2="22.1715" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.695993" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint10_linear_3784_9636" x1="21.9283" y1="-1.021" x2="21.9283" y2="22.1752"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8E6EE5" />
+                            <stop offset="0.485" stop-color="#B29CEE" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <h2 class="text-4xl md:text-[45px] text-[#210C5F] font-medium leading-[52px] z-10 text-center">Try
+                    metricloop now!
+                </h2>
+                <div class="flex gap-6">
+                    <button class="py-3 px-[31px] bg-custom_purple rounded-lg text-white z-10">Start now</button>
+                    <button class="py-3 px-4 bg-white text-customText_blue rounded-lg z-10">Book a demo</button>
+                </div>
+            </div>
+        </div>
+        <img class="flex absolute top-0 right-0 z-0" style="width: auto; height: 386.43px;"
+            src="/images/background-props/Trust.png" alt="place-holder">
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="flex gap-10 flex-col sm:flex-row justify-between px-5 md:px-[56px] xl:px-[156px] py-10">
+            <div class="flex gap-3">
+                <svg class="h-5" xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28"
+                    fill="none">
+                    <path
+                        d="M34.1723 1.66641L34.1662 1.67548L34.1602 1.68497L28.4612 10.7404L26.4845 13.881L20.1391 23.9648C20.1266 23.9848 20.0933 24.0376 20.0066 24.0376C19.9194 24.0376 19.8872 23.9865 19.8734 23.9648L13.5182 13.8742L11.5407 10.7346L5.86305 1.72024L5.83462 1.67672C5.22284 0.784481 4.27057 0.278547 3.21505 0.278341C2.89317 0.278341 2.56982 0.326809 2.254 0.422098C0.884754 0.836042 0 2.01642 0 3.42965V24.5271C0 25.9399 0.884756 27.1205 2.2538 27.5346C2.57003 27.6301 2.89359 27.6786 3.21505 27.6786C4.27036 27.6786 5.22263 27.1724 5.82793 26.2903L5.83524 26.2794L5.84235 26.2682L10.8821 18.118L8.90461 14.9789L3.34673 23.9667V3.98117L17.0311 25.7077C17.6746 26.7298 18.787 27.3401 20.0064 27.3401C20.3115 27.3399 20.6098 27.3018 20.8957 27.2285C21.4676 27.0819 21.9899 26.7954 22.4173 26.3932C22.6314 26.1923 22.8214 25.9624 22.9823 25.7068L36.6533 3.98096V23.9673L31.1192 15.0139L29.1417 18.1533L34.1305 26.2256L34.1645 26.2786C34.7778 27.1724 35.7301 27.6786 36.7849 27.6786C37.1066 27.6786 37.43 27.6301 37.7464 27.5346C39.1157 27.1203 40 25.9397 40 24.5271V3.42965C40 2.01724 39.1157 0.836456 37.7468 0.422098C37.4306 0.326809 37.1072 0.278133 36.7849 0.278133C35.7296 0.278133 34.7776 0.784271 34.1723 1.66641Z"
+                        fill="url(#paint0_linear_3784_9636)" />
+                    <path
+                        d="M34.4333 1.33542C34.3409 1.43937 34.2533 1.54888 34.1728 1.66624L34.1668 1.67532L34.1607 1.68481L28.4617 10.7403L26.4851 13.8808L20.1397 23.9647C20.1271 23.9847 20.0939 24.0375 20.0071 24.0375C19.92 24.0375 19.8878 23.9863 19.874 23.9647L13.5187 13.874L11.5413 10.7345L5.86361 1.72007L5.83518 1.67656C5.7708 1.5823 5.70016 1.49464 5.62846 1.40926C5.38684 1.21043 5.0775 1.08812 4.73827 1.08812C3.9691 1.08812 3.34583 1.70357 3.34583 2.46237L3.34771 3.98286L17.0316 25.7075C17.6752 26.7297 18.7875 27.34 20.0069 27.34C20.3121 27.3398 20.6104 27.3016 20.8963 27.2284C21.4681 27.0817 21.9905 26.7953 22.4179 26.3931C22.6319 26.1922 22.8219 25.9622 22.9829 25.7067L36.6545 3.97997L36.62 2.46237C36.62 1.70357 35.9967 1.08812 35.2277 1.08812C34.932 1.08812 34.6588 1.18032 34.4333 1.33542Z"
+                        fill="url(#paint1_linear_3784_9636)" />
+                    <mask id="mask0_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="29" y="15"
+                        width="8" height="12">
+                        <path
+                            d="M29.1418 18.1525L34.1305 26.2248L34.1646 26.2778C34.262 26.4197 34.3703 26.5478 34.4835 26.6694C34.6988 26.8043 34.9532 26.8842 35.2272 26.8842C35.9962 26.8842 36.6195 26.2691 36.6195 25.5101L36.5925 23.8679L31.1193 15.0132L29.1418 18.1525Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_3784_9636)">
+                        <mask id="mask1_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint2_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask1_3784_9636)">
+                            <path
+                                d="M29.1421 18.1502L34.1308 26.2225L34.1649 26.2755C34.2623 26.4174 34.3706 26.5454 34.4839 26.6671C34.6991 26.802 34.9535 26.8818 35.2275 26.8818C35.9965 26.8818 36.6198 26.2668 36.6198 25.5078L36.5928 23.8656L31.1196 15.0109L29.1421 18.1502Z"
+                                fill="url(#paint3_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <mask id="mask2_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="14"
+                        width="8" height="13">
+                        <path
+                            d="M3.3847 23.9051L3.34583 25.5101C3.34583 26.2691 3.9691 26.8842 4.73828 26.8842C5.06371 26.8842 5.36093 26.7713 5.59795 26.5867C5.67904 26.4927 5.75659 26.3943 5.82849 26.2895L5.8358 26.2786L5.84291 26.2675L10.8827 18.1172L8.90517 14.9781L3.3847 23.9051Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask2_3784_9636)">
+                        <mask id="mask3_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint4_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask3_3784_9636)">
+                            <path
+                                d="M3.38458 23.9027L3.3457 25.5078C3.3457 26.2668 3.96898 26.8818 4.73815 26.8818C5.06359 26.8818 5.3608 26.769 5.59782 26.5844C5.67892 26.4904 5.75647 26.392 5.82837 26.2872L5.83568 26.2763L5.84279 26.2651L10.8825 18.1149L8.90505 14.9758L3.38458 23.9027Z"
+                                fill="url(#paint5_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <path
+                        d="M34.4319 1.33474C34.3395 1.43869 34.2519 1.5482 34.1715 1.66556L34.1654 1.67464L34.1593 1.68413L20.1383 23.964C20.1257 23.984 20.0925 24.0368 20.0058 24.0368C19.9433 24.0368 19.91 24.0106 19.8904 23.9879L20.2595 24.651C21.0876 26.0752 22.6943 26.0991 23.2524 25.1998L23.5996 24.7234L36.6531 3.9795L36.6186 2.46169C36.6186 1.70289 35.9953 1.08744 35.2264 1.08744C34.9306 1.08744 34.6574 1.17964 34.4319 1.33474Z"
+                        fill="url(#paint6_linear_3784_9636)" />
+                    <mask id="mask4_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="12" y="1"
+                        width="9" height="12">
+                        <path
+                            d="M16.7603 2.38361L16.0873 3.38331L12.1917 9.63375L14.1936 12.8071L19.8667 3.62462C19.8802 3.60235 19.9124 3.55079 20 3.55079C20.0878 3.55079 20.1215 3.60441 20.1338 3.62483L19.753 2.93224C19.2875 2.13137 18.5754 1.77331 17.9423 1.77331C17.4496 1.77331 17.0046 1.99008 16.7603 2.38361Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask4_3784_9636)">
+                        <mask id="mask5_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.21 -6681.1H6816.5V6835.56H-6881.21V-6681.1Z"
+                                fill="url(#paint7_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask5_3784_9636)">
+                            <path
+                                d="M16.7605 2.38215L16.0875 3.38184L12.1919 9.63229L14.1938 12.8057L19.8669 3.62316C19.8805 3.60088 19.9127 3.54932 20.0002 3.54932C20.088 3.54932 20.1217 3.60295 20.134 3.62337L19.7532 2.93077C19.2877 2.1299 18.5756 1.77185 17.9425 1.77185C17.4498 1.77185 17.0049 1.98862 16.7605 2.38215Z"
+                                fill="url(#paint8_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <mask id="mask6_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="0"
+                        width="12" height="13">
+                        <path
+                            d="M17.0093 1.90402L16.0858 3.3849L16.7589 2.3852C17.3169 1.48595 18.9236 1.50988 19.7515 2.93383L20.092 3.55918L20.2594 3.83804L20.9174 4.89631L25.7916 12.7755L27.7716 9.62214L22.9877 1.90402C22.3458 0.868226 21.2286 0.249887 19.9984 0.249887C18.7681 0.249887 17.6507 0.868226 17.0093 1.90402Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask6_3784_9636)">
+                        <mask id="mask7_3784_9636" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6882"
+                            y="-6682" width="13699" height="13518">
+                            <path d="M-6881.22 -6681.11H6816.5V6835.56H-6881.22V-6681.11Z"
+                                fill="url(#paint9_linear_3784_9636)" />
+                        </mask>
+                        <g mask="url(#mask7_3784_9636)">
+                            <path
+                                d="M17.0089 1.90097L16.0854 3.38185L16.7585 2.38215C17.3165 1.4829 18.9232 1.50682 19.7511 2.93078L20.0916 3.55613L20.259 3.83499L20.917 4.89326L25.7912 12.7725L27.7712 9.61909L22.9873 1.90097C22.3454 0.865174 21.2282 0.246836 19.998 0.246836C18.7677 0.246836 17.6503 0.865174 17.0089 1.90097Z"
+                                fill="url(#paint10_linear_3784_9636)" />
+                        </g>
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_3784_9636" x1="20.0001" y1="5.73431" x2="20.0001" y2="35.8651"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#C4B2F5" />
+                            <stop offset="0.172062" stop-color="#C4B2F5" />
+                            <stop offset="1" stop-color="#5E33D7" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_3784_9636" x1="20.0001" y1="-4.0707" x2="20.0001" y2="26.6046"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8969E3" />
+                            <stop offset="0.827938" stop-color="#8A69E2" />
+                            <stop offset="1" stop-color="#B498FE" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_3784_9636" x1="32.8838" y1="5.73079" x2="32.8838" y2="35.8616"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.436518" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_3784_9636" x1="32.8809" y1="5.73122" x2="32.8809" y2="35.862"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#9273E7" />
+                            <stop offset="1" stop-color="#DACFF7" />
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_3784_9636" x1="7.11815" y1="5.73079" x2="7.11815" y2="35.8616"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.436518" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_3784_9636" x1="7.11416" y1="5.73121" x2="7.11416" y2="35.862"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#C1AFF5" />
+                            <stop offset="0.436518" stop-color="#B9A5F2" />
+                            <stop offset="1" stop-color="#451DB4" />
+                        </linearGradient>
+                        <linearGradient id="paint6_linear_3784_9636" x1="28.2717" y1="2.51188" x2="28.2717" y2="39.9116"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="1e-07" stop-color="#8563E3" />
+                            <stop offset="0.172062" stop-color="#8968E4" />
+                            <stop offset="1" stop-color="#896BDC" />
+                        </linearGradient>
+                        <linearGradient id="paint7_linear_3784_9636" x1="16.1647" y1="4.33224" x2="16.1647" y2="27.3543"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.695993" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint8_linear_3784_9636" x1="16.163" y1="4.33269" x2="16.163" y2="27.3548"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8A6BDE" />
+                            <stop offset="0.145" stop-color="#A68DEB" />
+                        </linearGradient>
+                        <linearGradient id="paint9_linear_3784_9636" x1="21.9276" y1="-1.02468" x2="21.9276"
+                            y2="22.1715" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="0.695993" stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint10_linear_3784_9636" x1="21.9283" y1="-1.021" x2="21.9283" y2="22.1752"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8E6EE5" />
+                            <stop offset="0.485" stop-color="#B29CEE" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <img class="h-5" src="/images/other-sections/Component name.png" alt="metricloop">
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-10 items-start">
+                <button>Pricing</button>
+                <button>Privacy</button>
+                <button>Contact us</button>
+                <button>© metricloop</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
